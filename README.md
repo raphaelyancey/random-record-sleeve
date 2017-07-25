@@ -26,8 +26,6 @@ var img = randomRecordSleeve.fromList(352246, options);
 
 # Options
 
-`consumerKey` *string*
-The Discogs API consumer key.
+`consumerKey` *string* | The Discogs API consumer key.
 
-`consumerSecret` *string*
-The Discogs API consumer secret.
+`consumerSecret` *string* | The Discogs API consumer secret.
