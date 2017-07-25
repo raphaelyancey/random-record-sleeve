@@ -21,15 +21,13 @@ var options = {
 };
 
 // Get a random sleeve from a list by giving the list ID
-randomRecordSleeve.fromList(352246, options);
+var img = randomRecordSleeve.fromList(352246, options);
 ```
 
 # Options
 
-## consumerKey
-### string
+`consumerKey` *string*
 The Discogs API consumer key.
 
-## consumerSecret
-### string
+`consumerSecret` *string*
 The Discogs API consumer secret.
