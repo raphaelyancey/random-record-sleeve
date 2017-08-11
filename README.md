@@ -18,7 +18,12 @@ var randomRecordSleeve = require('random-record-sleeve');
 // Set your Discogs API credentials (mandatory)
 randomRecordSleeve.setCredentials('k3y', 's3cr3t');
 
-// Get a random sleeve from a list by giving the list ID,
-// or defaults to https://www.discogs.com/lists/Discogs-Most-Popular-Albums/2056
-var imgURL = randomRecordSleeve.getSleeve(optionalListId);
+// Get a random sleeve from https://www.discogs.com/lists/Discogs-Most-Popular-Albums/2056
+var imgURL = randomRecordSleeve.getSleeve();
+
+// Options (default values)
+var imgURL = randomRecordSleeve.getSleeve({
+    listId: 2056, // List ID to get a sleeve from
+    size150: false // Gets the small sized (150x150) image if true
+});
 ```
