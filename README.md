@@ -15,13 +15,12 @@ To use in any web project.
 // Require the module
 var randomRecordSleeve = require('random-record-sleeve');
 
-var options = {
-  consumerSecret: 'CXDjOdfOBrUIPVjpbMh', // Mandatory
-  consumerKey: 'NyFFxQoZSxbmifdqWTKDGQQMJwuUtX' // Mandatory
-};
+// Set your Discogs API credentials (mandatory)
+randomRecordSleeve.setCredentials('k3y', 's3cr3t');
 
-// Get a random sleeve from a list by giving the list ID
-var img = randomRecordSleeve.fromList(352246, options);
+// Get a random sleeve from a list by giving the list ID,
+// or defaults to https://www.discogs.com/lists/Discogs-Most-Popular-Albums/2056
+var imgURL = randomRecordSleeve.getSleeve();
 ```
 
 # Options
