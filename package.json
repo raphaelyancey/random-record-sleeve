@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/raphaelyancey/random-record-sleeve/issues"
   },
-  "homepage": "https://github.com/raphaelyancey/random-record-sleeve#readme"
+  "homepage": "https://github.com/raphaelyancey/random-record-sleeve#readme",
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
 }
