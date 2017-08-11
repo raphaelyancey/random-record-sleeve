@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/raphaelyancey/random-record-sleeve#readme",
   "dependencies": {
-    "axios": "^0.16.2"
+    "axios": "^0.16.2",
+    "underscore": "^1.8.3"
   }
 }
