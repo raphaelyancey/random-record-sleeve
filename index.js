@@ -50,7 +50,12 @@ var getSleeve = function(options) {
   return getList(options.listId).then(function(res) {
     var rand = random(0, res.data.items.length);
     return getItem(res.data.items[rand].id).then(function(res) {
-      return options.size150 ? res.data.images[0].uri150 : res.data.images[0].uri;
+      var ret = {
+        url: options.size150 ? res.data.images[0].uri150 : res.data.images[0].uri,
+        title: res.data.title,
+        year: res.data.year
+      };
+      return ret;
     });
   }).catch(function(res) {
     return null;
