@@ -1,6 +1,6 @@
 {
   "name": "random-record-sleeve",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Gets a random record sleeve from Discogs.",
   "main": "index.js",
   "scripts": {
